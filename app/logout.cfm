@@ -1,2 +1,2 @@
 <cflogout>
-<cflocation url="index.cfm">
+<cflocation url="index.cfm" addtoken="false">

@@ -1,5 +1,8 @@
 <cfcomponent>
-	<cfset This.name = "AudiblethoughtsApp-2.0">
+	<cfset This.name = "AudiblethoughtsApp2">
+	<cfset this.sessionmanagement = 'true'>
+	<cfset this.loginstorage="session">
+
 
 <cfset this.datasource = "northern_aliweb">
 
@@ -14,14 +17,16 @@
 			<cfabort>
 		<cfelse>
 			<cfquery name="q">
-				select loginid, roles from users 
-				where loginid = <cfqueryparam value="#cflogin.name#" cfsqltype="cf_sql_varchar">
-				and pwd = <cfqueryparam value="#cflogin.password#" cfsqltype="cf_sql_varchar">
+				select username, '' roles from northern_aliweb.users 
+				where username = <cfqueryparam value="#cflogin.name#" cfsqltype="cf_sql_varchar">
+				and password = <cfqueryparam value="#cflogin.password#" cfsqltype="cf_sql_varchar">
 			</cfquery>
 			<cfif q.recordcount eq 1>
 				<cfloginuser name="#cflogin.name#" password="#cflogin.password#" roles="#q.roles#">	
 			<cfelse>
-				<cflocation url="../index.cfm">
+				<cfset msg="Your credentials are incorrect. Please try again.">
+				<cfinclude template="signin.cfm">
+				<cfabort>
 			</cfif>
 			
 				

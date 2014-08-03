@@ -17,13 +17,14 @@
                         </label>
                         <input type="text" placeholder="User name" class="form-control float-left" id="newuserid" name="username">
                         <div id="username-target" class="ajax-target"></div>
-                    
+                        <input type="hidden" id="username-status" value="-1">
                         <div class="clear"></div>
                     
                         <label for="password">Enter a password (at least 5 characters)</label>
                         <input type="password" placeholder="Password" class="form-control float-left" name="password" id="password">
                     
                         <div id="password-target" class="ajax-target"></div>
+                        <input type="hidden" id="password-status" value="-1">
                         <div class="clear"></div>
 
                         <label for="age">Age:</label>      
@@ -118,5 +119,5 @@
 <cfinclude template="page_footer.cfm">
 <script type="text/javascript" src="assets/at.js"   ></script> 
 <script type="text/javascript">
-	initCreateUserIdPageBindings();
+
 </script>

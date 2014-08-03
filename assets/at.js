@@ -1,5 +1,6 @@
 $(function() {
-	 iDOK = 0;
+	initCreateUserIdPageBindings();
+	
 	
 });
 
@@ -7,37 +8,19 @@ function validAge(age) {
 	if (isNaN(age)) {return false;} else if (age < 18 || age > 125) {return false;} else {return true;}
 }
 
-function uniqueUserId(userId) {
-	var url = 'Audible.cfc?method=checkId&_cf_nodebug=true&returnformat=plain&username=' + userId;
 
- 	$.ajax({ 
-            type: "POST", 
-            url: url,
-            dataType: "html", 
-            success: function(response) { 
-                $("#username-target").html(response);
-         //     	console.log('ajax success: ' + $('#checkuserresponse').val());
-            	}
-            }); 
-	  if($('#checkuserresponse').val() == 1)
-                	{return 1;} else {return 0;}
-}
 
 function validPassword(password) {
-	var url = 'Audible.cfc?method=checkPassword&_cf_nodebug=true&returnformat=plain&attempt=' + password;
 	var result = 0;
- 	$.ajax({ 
-            type: "POST", 
-            url: url,
-            dataType: "html", 
-            success: function(response) { 
-                $("#password-target").html(response);
-           //   	console.log('ajax success: ' + $('#checkpwdesponse').val());
-           		result = 1;
 
-            	}
-            }); 
- 		console.log('result of pwd function:' + result);
+ 		if(password.length > 4) {
+ 			result=1;
+ 			$("#password-target").html("Password OK");}
+
+ 			else {
+ 				$("#password-target").html("Password needs to be at least 5 characters");
+ 			}
+ 		$("#password-status").val(result);
 	  return result;
 }
 
@@ -73,36 +56,72 @@ function initCreateUserIdPageBindings() {
 			$("#ethnicselfcontainer").hide();
 		}
 	});
-/*
-	$("#newuserid").blur(function(){
-		var userId = $(this).val();
-		uniqueUserId(userId);
-	});
-		
-	$("#password").blur(function(){
-		var password = $(this).val();
-		validPassword(password);
-	});
-		
-*/
 
-	$("#createForm").change(function(){
+	//reinstate bindings for first 3 fields
+	$("#newuserid").change(function(){
 		
+		var unique = uniqueUserId($(this).val());
 		
-		var userId = $("#newuserid").val();
-		var password = $("#password").val();
-		var age =  $("#age").val();
-		var userIdStatus = $("#checkuserresponse").val();
-		var unique = uniqueUserId(userId);
-		var isValidPassword = validPassword(password);
-		var response;
-		console.log('pwd:' + isValidPassword);
-		if(unique == 0) {return false;}
-		if (isValidPassword == 0) {return false;} 
-	//	if(validAge(age) == false) {console.log('fail at validage');return false;}
+			testform();
+		
+	});
+	$("#password").change(function(){
+		var isValidPassword = validPassword($(this).val());
+		
+			testform();
+		
+	});
+
+	$("#age").change(function(){
+				testform();
+		
+	});
+
+	
+}
 
 
+function testform() {
 		
-		$("#createId").prop('disabled',false);
-	});
+		var userStatus = $("#username-status").val();
+		var passwordStatus = $("#password-status").val();
+		var age = $("#age").val();
+		if(userStatus!=1){return false;}
+	
+		if(passwordStatus!=1){return false;}
+		
+	 	if(validAge(age) == false) {return false;}
+		shouldCreateButtonBeActive(userStatus,passwordStatus);
+			
+	}
+
+function isOK(){
+	return true;
+	
+}
+
+function notOK(){
+	return false;
+}
+
+function shouldCreateButtonBeActive(userStatus, passwordStatus){
+	
+	if(userStatus==1 && passwordStatus==1){
+	$("#createId").prop('disabled',false);
+	} else
+	{$("#createId").prop('disabled',true);}
+}
+
+function uniqueUserId(userId) {
+ 	$.ajax({ 
+        type: "POST", 
+        url: 'Audible.cfc?method=checkId&_cf_nodebug=true&returnformat=json&username=' + userId,
+        dataType: "html", 
+        success: function(response) { 
+            var r = jQuery.parseJSON(response);
+            $("#username-target").html(r.RESULT);
+     		$("#username-status").val(r.RETURNSTATUS);
+        	}
+        }); 
+	  
 }

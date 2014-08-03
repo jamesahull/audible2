@@ -7,7 +7,7 @@
     <meta name="author" content="The Northern Union Ltd">
 	
 	
-	<cfif isdefined("admin")>
+	<cfif isdefined("app")>
 		<cfset filePrefix = '../'>
 	<cfelse>
 		<cfset filePrefix = ''>
@@ -15,10 +15,10 @@
 	<cfoutput>
 	<link href="#filePrefix#assets/bootstrap.css" rel="stylesheet">
 	<link href="#filePrefix#assets/bootstrap-responsive.css" rel="stylesheet">
-	<link href='http://fonts.googleapis.com/css?family=Nothing+You+Could+Do' rel='stylesheet' type='text/css'>
+ 	<link href='http://fonts.googleapis.com/css?family=Nothing+You+Could+Do' rel='stylesheet' type='text/css'> 
     <script src="#filePrefix#assets/jquery.js"></script>
 	<script src="#filePrefix#assets/bootstrap.js"></script>
-<!--- 	<link href="#filePrefix#assets/css.css" rel="stylesheet" type="text/css">--->
+	<link href="#filePrefix#assets/at.css" rel="stylesheet" type="text/css">
 	</cfoutput>
 	<style>
 	 /* Utility */
@@ -39,7 +39,7 @@
 	}
 	body{ padding-top: 50px; }
 
-	h1, .brand {font-family: 'Nothing You Could Do', cursive;}
+	h1, .brand {font-family: 'Nothing You Could Do', sans-serif;}
 
 	li, h3 {}
 
@@ -77,7 +77,7 @@
 		            <span class="icon-bar"></span>
 		        </a>
 				
-				<a class="brand" href="#fileprefix#index.cfm"><strong>Audible Thoughts</strong></a>
+				<a class="brand" href="index.cfm"><strong>Audible Thoughts</strong></a>
 
 				
 				<ul class="nav pull-right">
@@ -86,13 +86,13 @@
 							<i class="icon-info-sign icon-white"></i> Menu <b class="caret"></b>
 						</a>
 						<ul id="actions-submenu" class="dropdown-menu">
-							 <li class="nav-header">Pages</li>
+							 
 							 	
 									<li><a href="about.cfm">About</a></li>
 								
 									<li><a href="contact.cfm">Contact</a></li>
 								
-									<cfif isdefined("admin")>
+									<cfif isdefined("app")>
 										<li><a href="logout.cfm">Log out</a></li>
 									</cfif>
 						</ul>

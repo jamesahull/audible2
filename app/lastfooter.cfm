@@ -7,7 +7,7 @@
 			<a href="#"><i class="icon-arrow-up"></i> Back to top</a>
 		</p>
 		<p>
-			<a href="http://northern-union.com/">The Northern Union Ltd</a> is registered in England no. 9102768
+			Site created by <a href="http://northern-union.com/">The Northern Union Ltd</a>
 			
 		</p>
 		

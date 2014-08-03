@@ -1,4 +1,4 @@
-<cfset admin=true>
+<cfset app = true>
 <cfinclude template="../page_header.cfm">
 
 	
@@ -19,6 +19,11 @@
 
 			<form action="index.cfm" method="post" class="form-control">
 				<label for="loginId">Already registered? Login below with your username</label>
+				<cfif isdefined("msg")>
+					<div>
+						<p><cfoutput><span class="btn btn-warning">#msg#</span></cfoutput></p>
+					</div>
+				</cfif>
 				<input type="text" name="j_username" id="loginId" class="form-control" placeholder="Login" /><br>
 				<label for="pwd">Password</label>
 				<input type="password" name="j_password" id="pwd" class="form-control" placeholder="Password" /><br>
