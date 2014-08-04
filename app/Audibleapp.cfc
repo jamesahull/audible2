@@ -151,4 +151,27 @@
 		</cfquery>
 	</cffunction>
 
+	<cffunction name="registerForSummary" returntype="String">
+		<cfargument name="registeredEmail" type="string">
+		<cfif isValid("email", registeredEmail)>
+			<cfquery name="checkDuplicate">
+				select email from registeredemails where email = <cfqueryparam value="#registeredEmail#" cfsqltype="cf_sql_varchar">
+			</cfquery>
+			<cfif checkDuplicate.recordcount eq 0>
+				<cfquery name="q">
+				insert into northern_aliweb.registeredemails (email, create_date)
+				 VALUES (<cfqueryparam value="#registeredEmail#" cfsqltype="cf_sql_varchar">,
+				 	<cfqueryparam value="#Now()#" cfsqltype="cf_sql_date">)
+				</cfquery>
+				<cfset var result = 'Email address registered' />
+			<cfelse>
+				<cfset var result = 'Duplicated email address' />
+			</cfif>
+			
+
+		<cfelse>
+			<cfset var result = 'Invalid email address' />
+		</cfif>
+		<cfreturn result />
+	</cffunction>
 </cfcomponent>
