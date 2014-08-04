@@ -86,15 +86,16 @@
 							<i class="icon-info-sign icon-white"></i> Menu <b class="caret"></b>
 						</a>
 						<ul id="actions-submenu" class="dropdown-menu">
-							 
-							 	
-									<li><a href="about.cfm">About</a></li>
-								
-									<li><a href="contact.cfm">Contact</a></li>
-								
+							 		
 									<cfif isdefined("app")>
+										<li><a href="index.cfm">Your homepage</a></li>
 										<li><a href="logout.cfm">Log out</a></li>
 									</cfif>
+							 		
+									<li><a href="#filePrefix#about.cfm">About</a></li>
+								
+									<li><a href="#filePrefix#contact.cfm">Contact</a></li>
+								
 						</ul>
 					</li>
 				</ul>

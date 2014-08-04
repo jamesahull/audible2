@@ -10,7 +10,7 @@
 </div>
 
 <div class="row">
-<div class="span7">
+<div class="span5">
 
 		<section id="eventHandlers">
 		
@@ -18,7 +18,8 @@
 			
 
 			<form action="index.cfm" method="post" class="form-control">
-				<label for="loginId">Already registered? Login below with your username</label>
+				<h3>Already registered?</h3>
+				<label for="loginId">Login below with your username</label>
 				<cfif isdefined("msg")>
 					<div>
 						<p><cfoutput><span class="btn btn-warning">#msg#</span></cfoutput></p>
@@ -39,8 +40,8 @@
 	</div>
 
 
-<div class="span2">
-<h2>Not signed up?</h2>
-<p><a class="btn btn-primary btn-lg" role="button" href="participantinfo.cfm">Information and sign up &raquo;</a></p>
+<div class="span4">
+<h3>Not signed up?</h3>
+<p><a class="btn btn-primary btn-lg" role="button" href="../participantinfo.cfm">Information and sign up &raquo;</a></p>
 </div>
 <cfinclude template="page_footer.cfm">
