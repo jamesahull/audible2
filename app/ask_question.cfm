@@ -17,7 +17,7 @@
         
           <form action="question_action.cfm" method="post">
             
-              <label for="question">Use this form to ask a question to the researcher.</label>
+              <label for="question">Use this form to ask the researcher a question.</label>
           <p>You will have to login and check the status of your question at a later date as we do not have contact details for you.</p>
               <textarea 
                 name="question" 

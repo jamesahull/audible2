@@ -4,7 +4,7 @@
 	<div class="container">
 <div class="hero-unit">
 	
-	<h1>Participant Information</h1>
+	<h1>About the researcher</h1>
 	
 </div>
 

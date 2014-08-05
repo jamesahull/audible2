@@ -7,8 +7,8 @@
 			select username from users where lower(username) = <cfqueryparam value="#lcase(username)#" cfsqltype="cf_sql_varchar">
 		</cfquery>
 		<cfif q.recordcount eq 0>
-			<cfif len(username) lt 5>
-				<cfset loc.result = 'User name needs to be at least 5 characters long.' />
+			<cfif len(username) lt 4>
+				<cfset loc.result = 'User name needs to be at least 4 characters long.' />
 			<cfelse>
 				<cfset loc.result = "User name OK">
 				<cfset loc.returnStatus = 1>
