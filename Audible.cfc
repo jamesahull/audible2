@@ -67,7 +67,7 @@
 			</cfcatch>
 		</cftry>
 
-		<cfreturn 'User created successfully' />
+		<cfreturn 'User profile created successfully' />
 
 	</cffunction>
 

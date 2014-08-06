@@ -13,6 +13,7 @@
 		<cfset filePrefix = ''>
 	</cfif>
 	<cfoutput>
+	<link rel="icon" type="image/png" href="#fileprefix#aticon.png" />
 	<link href="#filePrefix#assets/bootstrap.css" rel="stylesheet">
 	<link href="#filePrefix#assets/bootstrap-responsive.css" rel="stylesheet">
  	<link href='http://fonts.googleapis.com/css?family=Nothing+You+Could+Do' rel='stylesheet' type='text/css'> 

@@ -14,7 +14,7 @@
 
       <div class="row">
        <div class="span12">
-        <h3>Summary of the research?</h3>
+        <h3>Summary of the research</h3>
           <p>I'm investigating the way mental health service users and healthcare staff work together to make decisions about mental health care. Previous research tells me that service users and healthcare professionals don't always agree about why people experience mental health problems and when they do, what can be done to help. I am interested to find out whether these differences are common and whether they affect people's experiences of using mental health services. </p>  
           <h3>What do I do next?</h3>
 

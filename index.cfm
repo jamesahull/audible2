@@ -56,9 +56,9 @@
 	<div class="span3">
 		<cfoutput>
 			<section id="Blog">
-				
+				<!---
 				<p class="text-center"><a class="btn btn-info homebutton" role="button" href="blog.cfm">Other things I've written</a></p>		
-			
+			--->
 			</section>
 
 		</cfoutput>
