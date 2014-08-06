@@ -7,7 +7,7 @@
 			<a href="#"><i class="icon-arrow-up"></i> Back to top</a>
 		</p>
 		<p>
-			Site created by <a href="http://northern-union.com/">The Northern Union Ltd</a> 
+	<!---		Site created by <a href="http://northern-union.com/">The Northern Union Ltd</a> --->
 			
 		</p>
 		

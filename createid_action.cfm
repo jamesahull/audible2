@@ -14,7 +14,7 @@
     		<cfoutput>
                 
                 <h2>#result#</h2>
-                <form action="app/index.cfm" method="post">
+                <form action="app/submit_post.cfm" method="post">
                     <input type="hidden" name="j_username"  value="#form.username#"/><br>
                 
                     <input type="hidden" name="j_password" id="pwd"  value="#form.password#"/><br>

@@ -128,4 +128,22 @@
 		<cfreturn q />		
 	</cffunction>
 
+	<cffunction name="getBlogPosts" returntype="Query">
+		<cftry>
+			<cffeed source="http://slingersays.blogspot.com/feeds/posts/default" query="result"/>
+		<cfcatch type="any">
+			<cfscript>
+	
+				var result = queryNew("TITLE,CONTENT,PUBLISHEDDATE", "Varchar,Varchar,Varchar");
+				queryAddRow(result, 1);
+				querySetCell(result, "TITLE", "Feed not available", 1);
+				querySetCell(result, "CONTENT", "Try again later", 1);
+				querySetCell(result, "PUBLISHEDDATE", dateFormat(Now(),"yyyy-mm-dd"), 1);
+			</cfscript>
+		</cfcatch>
+		</cftry>
+		<cfreturn result />
+
+	</cffunction>
+
 </cfcomponent>

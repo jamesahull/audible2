@@ -6,7 +6,7 @@
 
  <div class="container">
     <div class="hero-unit">
-      <h2>Thank you for submitting your story</h2>
+      <h1>Thank you</h1>
       
 
     </div>
@@ -15,6 +15,7 @@
       <div class="row">
        <div class="span12">
   <div class="form-group">
+    <p>Thank you very much for taking part. If you have any questions about this research, please contact me <a href="a.j.hull3@leeds.ac.uk">here</a>.</p>
   	<form action="edit_post_action.cfm" method="post" id="editPostForm">
         		<a class="btn btn-primary" href="index.cfm">Return to homepage &raquo;</a>
                 
@@ -29,11 +30,10 @@
               </cfoutput>
           </form>
 
-        <a href="index.cfm">Return to homepage</a>
       </div>
       </div>
 
-<cfinclude template="lastfooter.cfm">
+<cfinclude template="../lastfooter.cfm">
 <script type="text/javascript">
   
   

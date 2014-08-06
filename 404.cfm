@@ -3,19 +3,10 @@
 	<div class="container">
 <div class="hero-unit">
 	
-	<h1>The Northern Union</h1>
+	<h1>Sorry, that page is not available</h1>
 	<p>
-		Web development consultancy, specialising in:
-		</p><ul>
-			<li>Agile software development</li>
-			<li>ColdFusion/Railo</li>
-			<li>Business Intelligence</li>
-			<li>Big Data</li>
-			<li>eProcurement</li>
-			<li>Secure, robust, scalable web application development</li>
-		</ul>
-		
-	<p></p>
+	Please go to the <a href="index.cfm">homepage</a> and try again.	
+	</p>
 </div>
 
 <div class="row">
@@ -37,4 +28,22 @@
 		
 	</div>
 
-<cfinclude template="page_footer.cfm">
+	
+	<div class="span3">
+		<div class="well">
+		<ul class="nav nav-list">
+			<li class="nav-header">Find Out More</li>
+			<li>
+            	<a href="about.cfm" title="About me">About the researcher - Alison Hull</a>
+            </li>
+            <li>
+            	<a href="http://www.leeds.ac.uk/">University of Leeds</a>
+            </li>
+            
+            
+		</ul>
+		<br>
+		
+		</div>
+	</div>
+<cfinclude template="lastfooter.cfm">

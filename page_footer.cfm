@@ -1,6 +1,6 @@
 	
 	<div class="span3">
-		<div class="well">
+		<!--- <div class="well">
 		<ul class="nav nav-list">
 			<li class="nav-header">Find Out More</li>
 			<li>
@@ -14,7 +14,7 @@
 		</ul>
 		<br>
 		
-		</div>
+		</div>--->
 	</div>
 
 	<cfinclude template="lastfooter.cfm">

@@ -14,11 +14,13 @@
 
       <div class="row">
        <div class="span12">
-        <h3>What is the purpose of the research?</h3>
-<p>Collaborative practice is a type of team working where service users and healthcare staff work in partnership to determine the type of mental healthcare a person needs. In theory, this kind of working encourages greater equality than the traditional patient / professional relationship. However, some previous research questions its supposed benefits. One reason is that mental health service users, healthcare staff and the general public may not be agreed on the causes of mental health problems or about what services and treatments they believe to be helpful. The purpose of this research is to find out more about people's experiences of care within the mental healthcare system and find out more about working relationships between service users and healthcare workers. </p>  
+        <h3>Summary of the research?</h3>
+          <p>I'm investigating the way mental health service users and healthcare staff work together to make decisions about mental health care. Previous research tells me that service users and healthcare professionals don't always agree about why people experience mental health problems and when they do, what can be done to help. I am interested to find out whether these differences are common and whether they affect people's experiences of using mental health services. </p>  
+          <h3>What do I do next?</h3>
+
           <form action="post_action.cfm" method="post">
             
-              <label for="content">Please write here about your experiences within mental health. It would be helpful if you could give as much detail as you feel comfortable sharing. I am interested in hearing about a range of experiences, both positive and negative. You may wish to write about communication, the extent to which you felt you were listened to, the way staff related to you, the physical environment and so on. There is no right or wrong way to tell your story, please write in a way which feels comfortable to you. <br>Thank you. </label>
+              <label for="content">This is a place to share your story about your experiences of mental health care. There is no right or wrong way to write, so please share whatever feels comfortable in your own words. You can save your study and come back to it later if you like. If you change your mind, you can click on the 'withdraw from study' button.  </label>
               <textarea 
                 name="content" 
                 
@@ -36,7 +38,7 @@
       </div>
       </div>
 
-<cfinclude template="lastfooter.cfm">
+<cfinclude template="../lastfooter.cfm">
 <script type="text/javascript">
   $("#content").autosize();
  </script>

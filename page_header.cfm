@@ -71,11 +71,11 @@
 			
 			<div class="container">
 				<cfoutput>
-				<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+		<!---		<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
 		            <span class="icon-bar"></span>
 		            <span class="icon-bar"></span>
 		            <span class="icon-bar"></span>
-		        </a>
+		        </a> --->
 				
 				<a class="brand" href="index.cfm"><strong>Audible Thoughts</strong></a>
 
@@ -86,7 +86,7 @@
 							<i class="icon-info-sign icon-white"></i> Menu <b class="caret"></b>
 						</a>
 						<ul id="actions-submenu" class="dropdown-menu">
-							 		
+							 		<li><a href="#fileprefix#index.cfm">Audible Thoughts homepage</a></li>
 									<cfif isdefined("app")>
 										<li><a href="index.cfm">Your homepage</a></li>
 										<li><a href="logout.cfm">Log out</a></li>

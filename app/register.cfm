@@ -15,13 +15,14 @@
 
 
       <div class="row">
-       <div class="span6">
+       <div class="span9">
         
       <cfif not isdefined("form.submit")>
   
 
-      <p>If you would like to receive a summary of the research once it is complete, please provide your email address and you will be added to the mailing list.</p>
-          <p>Please note that this email address is not linked to your user profile so your anonymity is protected.</p>
+      <p>If you would like to receive a summary of the research findings once it is complete, please register here.</p>
+      <p>Your email address isn't linked to your user ID so you will remain anonymous.</p>
+
           <form action="register.cfm" method="post" class="form-control">
              <div class="form-group ">
                <label for="email">Email address
@@ -30,6 +31,7 @@
                 <p>
                   <input type="submit" class="btn btn-success" id="submit" value="Submit" name="submit"/>
               </p>
+              </div>
           </form>
       <cfelse>
         <cfoutput>
@@ -37,14 +39,10 @@
         </cfoutput>
 
       </cfif>
-            </div>
-             </div>
+            
 
-          </form>
-
-
-        </div>
+        
       </div>
       
 
-<cfinclude template="lastfooter.cfm">
+<cfinclude template="page_footer.cfm">

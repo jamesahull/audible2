@@ -12,19 +12,17 @@
     </div>
 
 
-      <div class="row">
-       <div class="span6">
-          <p>This will delete all your stories, questions and your user details.</p>
-          <button class="btn-danger">This action is permanent and cannot be reversed!</button>
-              <p></p>
-        </div>        
-      </div>
+      
       <div class="row">
         <div class="span6">    
 
-            <a class="btn btn-primary" href="confirm_withdraw.cfm">Withdraw from study and delete me &raquo;</a>
+            <a class="btn btn-primary" href="confirm_withdraw.cfm">I want to withdraw my data from the study &raquo;</a>
+        
+            <p>Please remember that after two weeks, it may not be possible for me to remove your data.</p>
+
         </div>
       </div>
       
 
-<cfinclude template="lastfooter.cfm">
+
+<cfinclude template="../lastfooter.cfm">

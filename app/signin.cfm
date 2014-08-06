@@ -41,7 +41,9 @@
 
 
 <div class="span4">
-<h3>Not signed up?</h3>
-<p><a class="btn btn-primary btn-lg" role="button" href="../participantinfo.cfm">Information and sign up &raquo;</a></p>
+<h3>&nbsp;</h3>
+<p><a class="btn btn-primary btn-lg" role="button" href="../participantinfo.cfm">I'm not registered - <br>I'd like to take part &raquo;</a></p>
 </div>
+
+
 <cfinclude template="page_footer.cfm">

@@ -17,8 +17,8 @@
         
           <form action="question_action.cfm" method="post">
             
-              <label for="question">Use this form to ask the researcher a question.</label>
-          <p>You will have to login and check the status of your question at a later date as we do not have contact details for you.</p>
+              <label for="question">Please write your question here and I will respond to it as soon as I can.</label>
+          <p>Please remember to log back in and check as I don't have your contact details.</p>
               <textarea 
                 name="question" 
                 
@@ -36,7 +36,7 @@
       </div>
       </div>
 
-<cfinclude template="lastfooter.cfm">
+<cfinclude template="../lastfooter.cfm">
 <script type="text/javascript">
   $("#question").autosize();
  </script>

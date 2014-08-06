@@ -29,7 +29,7 @@ function validPassword(password) {
 function initParticpantChecklist() {
 	$(".checkAgreed").click(function(){
 		var n = $( "input:checked" ).length;
-		if(n==11){
+		if(n==5){
 			$("#createUserButtonDiv").show();
 			} else {
 			$("#createUserButtonDiv").hide();

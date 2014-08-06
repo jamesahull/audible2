@@ -9,10 +9,20 @@
 
     </div>
 
+<div class="row">
+  <div class="span12">
+    <a class="btn btn-primary btn-lg" role="button" href="submit_post.cfm">Submit a new story &raquo;</a>
+    <a class="btn btn-primary btn-lg" role="button" href="ask_question.cfm" >Ask a question &raquo;</a>
+    <a class="btn btn-primary btn-lg" role="button" href="withdraw.cfm" >Withdraw from study &raquo;</a>
+    <a class="btn btn-primary btn-lg" role="button" href="register.cfm" >Register to receive a summary of the research &raquo;</a>
+  </div>
+  
+</div>
+
 
       <div class="row">
        
-        <div class="span9">
+        <div class="span12">
           <h2>My stories</h2>
           <table class="table">
             <cfoutput query="queries.posts">
@@ -42,7 +52,7 @@
 
           
        </div>
-
+<!---
            <div class="span3">
             <div class="well">
               <ul class="nav nav-list">
@@ -54,6 +64,7 @@
               </ul>
             </div>
           </div>
+          --->
         </div>
         <div class="row">
        <div class="span9">
@@ -76,4 +87,4 @@
       </div>
 
 
-<cfinclude template="lastfooter.cfm">
+<cfinclude template="../lastfooter.cfm">

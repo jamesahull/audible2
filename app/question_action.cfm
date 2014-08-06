@@ -22,4 +22,4 @@
       </div>
       </div>
 
-<cfinclude template="lastfooter.cfm">
+<cfinclude template="../lastfooter.cfm">

@@ -6,67 +6,53 @@
 <div class="hero-unit">
 	
 	<h1>Participant Information</h1>
-<h3><i>A psychoanalytically informed discourse analysis of collaborative practice in psychiatry.</i></h3>	
+
 </div>
 
 <div class="row">
-<div class="span9">
+<div class="span12">
 
 		<section id="AboutStudy">
 
-<p>You are invited to take part in this study about experiences in the mental healthcare system. Before deciding whether you want to take part, please read the following information. </p>
-
-<h3>What is the purpose of the research?</h3>
-<p>Collaborative practice is a type of team working where service users and healthcare staff work in partnership to determine the type of mental healthcare a person needs. In theory, this kind of working encourages greater equality than the traditional patient / professional relationship. However, some previous research questions its supposed benefits. One reason is that mental health service users, healthcare staff and the general public may not be agreed on the causes of mental health problems or about what services and treatments they believe to be helpful. The purpose of this research is to find out more about people's experiences of care within the mental healthcare system and find out more about working relationships between service users and healthcare workers. </p>   
-
-<h3>Who is being asked to participate?</h3>
-<p>People who have used secondary (acute) NHS mental health services within the last two years. This might be as an inpatient, in a community setting, or both.  </p>
-
-<h3>Who is doing the study?</h3>
-<p>The study is being carried out by Alison Hull, PhD student at the University of Leeds, supervised by Professor Dawn Freshwater and Dr Jane Cahill. </p>
-
-<h3>What will be involved if I decide to take part?</h3>
-<p>
-After reading this page, click the <b>Next</b> button below for the consent form. Once completed you will be asked to create a username and password and give some basic information about yourself. You are not required to give your real name.<p>
-<p>
- Then all you have to do is share your story. You can save it and return at any time by logging into the site with your username and password. You will have the opportunity to review it before finalising the submission to me.
- </p>
-
-<h3>
-What are the advantages and disadvantages of taking part?</h3>
-<p>
-You may experience some therapeutic benefit as a result of writing about your experience. It's possible that writing about it will allow you to see things differently or realise how your opinion has changed over time. Your data will help me to evaluate and explore differences in clinical practice and understand experiences of different kinds of working. Taken together, these stories provide information about what helps and what doesn't in order to develop more responsive and supportive services. The disadvantages are that it takes time to write about your experiences. You may feel discomfort or distress writing about past experiences so please only share what feels comfortable.</p>
-
-<h3>
-Can I withdraw from the study at any time?  </h3>
-<p>                           
-Your participation in the study is voluntary - you can change your mind and withdraw up to two weeks after you have submitted your story. After this time it may not be possible to extract your data from the study as I will be combining and analysing the data from several participants as I go along. </p>
-
-<h3>
-Will the information I provide be kept confidential?</h3>
-<p>
-Yes. All study data will be handled in accordance with the Data Protection Act 1998 and the University of Leeds safeguarding policy. Direct quotes may be taken from your story but care will be taken to ensure you are not identifiable from these - for example, any information relating to names or places will be removed. All data will be kept securely on University of Leeds  password protected computers and will be destroyed 3 years after the PhD has been completed. </p>
-
-<h3>
-What will happen to the results of the study?</h3>
-<p>
-The results of the study will be included in a PhD thesis and may be submitted to national and international conferences and peer reviewed journals.</p>
-
-<h3>
-Who has approved this study?</h3>
-<p>
-Ethical approval for this study has been given by the School of Healthcare Research Ethics Committee (reference number) on (date.) </p>
-
-<p>
-If you need further information to help you decide, please <a href="index.cfm?action=feedback&controller=home">ask here</a> and I will respond as soon as possible.
-</p>
-<p>Thank you for taking the time to read this.      </p>
+			<p>This study is to find out more about people's experiences of mental health care. Please read the information below to help you decide whether you wish to take part.</p>
 
 
+			<p>I'm investigating the way mental health service users and healthcare staff work together to make decisions about mental health care. Previous research tells me that service users and healthcare staff don't always agree about why people experience mental health problems and when they do, what can be done to help. I am interested to find out whether these differences are common and whether they affect people's experiences of using mental health services.</p>
 
+			<h3>Who can take part?</h3>
+			<p>People aged over 18 who have experience of using NHS mental health services other than their GP. </p>
+			
+			<h3>What am I being asked to do?</h3>
+			<p>Register with the site and then write, in your own words, about your experiences of mental health care.</p>
+			
+			<h3>Why am I being asked to register?</h3>
+			<p>I am hoping to collect a lot of data, so I need a way of connecting each story with the information you provide in the "about me" section. You don't have to give your real name. </p>
+			
+			<h3>What are the advantages and disadvantages of taking part? </h3>
+			<p>Advantages: Some people find writing about their experiences helpful. Doing so can help people to see things differently or realise how their opinions have changed over time. Taken together, lots of peoples' stories will help me to find out how people experience the mental health care they receive and this information can be used to help develop better services in the future.      </p>
+			
+			<p>Disadvantages: It may take some time to write about your experiences. You can save your story and come back to it later. If you have had difficult or unpleasant experiences as part of your care, please only write what you feel comfortable in sharing. </p>
+			
+			<h3>Will what I share be confidential?</h3>
+			<p>Yes. The study complies with The Data Protection Act 1998 and the University of Leeds safeguarding policy. If you agree, quotes may be taken from your story but you will not be identifiable from these. </p>
+			
+			<h3>What will happen to my story?</h3>
+			<p>I will read everything that is sent through this site. Your story may be combined with other peoples' to create a snapshot of the way people experience mental health care. This study forms part of my PhD thesis and may be presented at conferences and in journal articles.</p>
+			
+			<h3>What if I change my mind?</h3>
+			<p>You can withdraw from the study up to two weeks after you have submitted your story by logging in and clicking on the "withdraw" button on your home page. You don't have to give a reason. After two weeks, it may not be possible to extract your individual data from the study as I will be combining the stories from several people as I go along.</p>
+			
+			<h3>Can I see the research once it is finished?</h3>
+			<p>Yes! It would be my pleasure to share my findings with you, if you would like this. You will see a button saying "register to receive research summary" once you have signed up. </p>
+			
+			<h3>Who has approved this study?</h3>
+			<p>Ethical approval for this study was given by the School of Healthcare Research Ethics Committee Ref SHREC/RP/427 on 10th February 2014.</p>
+			
+			<h3>What if I need further information? </h3>
+			<p>Please <a href="mailto:a.j.hull3@leeds.ac.uk">ask here</a> and I will respond as soon as I can.
+			Thank you for reading. </p>
 
-
- <div ><a class="btn btn-primary btn-lg"  role="button" href="consent.cfm">Next &raquo;</a></div>
+			<div ><a class="btn btn-primary btn-lg"  role="button" href="consent.cfm">Next &raquo;</a></div>
 
 		</section>
 
