@@ -6,7 +6,7 @@
 
  <div class="container">
     <div class="hero-unit">
-      <h2>Thank you for updating your story</h2>
+      <h2>Thank you for sending your story</h2>
       
 
     </div>

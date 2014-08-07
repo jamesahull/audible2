@@ -6,3 +6,9 @@
 	font-size: 110%;
 }
 
+.altfont {
+	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic";
+	font-style: italic;
+	margin-top: 15px;
+	margin-bottom: 25px;
+}
