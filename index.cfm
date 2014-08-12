@@ -14,7 +14,7 @@
 			</div>
 
 
-         <p class="homepage-detail">I’m interested to hear your story.</p>
+         <p class="homepage-detail">I'm interested to hear your story.</p>
         <p><a class="btn btn-primary btn-lg" role="button" href="participantinfo.cfm">I'd like to take part &raquo;</a></p>
       
 </div>
@@ -35,7 +35,7 @@
 		<cfoutput>
 			<section id="About">
 				
-				<p class="text-center"><a class="btn btn-info" role="button" href="about.cfm">About Alison Hull</a></p>		
+				<p class="text-center"><a class="btn btn-info" role="button" href="about.cfm">Who's doing the research?</a></p>		
 			
 			</section>
 

@@ -58,8 +58,19 @@
 			where content = <cfqueryparam value="#content#" cfsqltype="cf_sql_varchar">
 			and userid = <cfqueryparam value="#getThisUserId(getAuthUser())#" cfsqltype="cf_sql_numeric">
 		</cfquery>
-
+		<cftry>
+			<cfmail to="#application.adminEmail#" from="Audible Thoughts<user@audiblethoughts.co.uk>" subject="User submission" type="html">
+				<p>User #getAuthUser()# just submitted this:</p>
+				<p>
+				#content#
+				</p>
+			</cfmail>
+			<cfcatch type="any">
+				<cflog file="AudibleLog" text="#cfcatch.message#">
+			</cfcatch>
+		</cftry>
 		<cfreturn id.id />
+
 	</cffunction>
 
 	<cffunction name="submitquestion" >
@@ -73,7 +84,20 @@
 				<cfqueryparam value="#now()#" cfsqltype="cf_sql_date">
 				)
 		</cfquery>
-
+		<cftry>
+			<cfmail to="#application.adminEmail#" 
+			bcc="james.a.hull@gmail.com"
+			from="Audible Thoughts<user@audiblethoughts.co.uk>" 
+			subject="User asked a question" type="html">
+				<p>User #getAuthUser()# just asked this:</p>
+				<p>
+				#question#
+				</p>
+			</cfmail>
+			<cfcatch type="any">
+				<cflog file="AudibleLog" text="#cfcatch.message#">
+			</cfcatch>
+		</cftry>
 		</cffunction>
 
 	<cffunction name="editpost">
@@ -111,7 +135,17 @@
 				and id = <cfqueryparam value="#postId#" cfsqltype="cf_sql_numeric">
 				
 		</cfquery>
-
+				<cftry>
+			<cfmail to="#application.adminEmail#" from="Audible Thoughts<user@audiblethoughts.co.uk>" subject="User edited story" type="html">
+				<p>User #getAuthUser()# just submitted this (change from initial story). They want to #formAction# the story.</p>
+				<p>
+				#content#
+				</p>
+			</cfmail>
+			<cfcatch type="any">
+				<cflog file="AudibleLog" text="#cfcatch.message#">
+			</cfcatch>
+		</cftry>
 
 	</cffunction>
 

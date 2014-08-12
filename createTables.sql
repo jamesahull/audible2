@@ -71,3 +71,14 @@ CREATE TABLE `users` (
   UNIQUE KEY `id` (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=latin1;
 
+CREATE TABLE `adminusers` (
+  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+  `loginid` varchar(64) DEFAULT NULL,
+  `pwd` varchar(255) DEFAULT NULL,
+  
+  `last_login` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `active` char(1) DEFAULT NULL,
+  `roles` varchar(32) DEFAULT NULL,
+  
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `id` (`id`));

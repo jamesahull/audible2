@@ -1,5 +1,5 @@
 <cfcomponent>
-	<cfset This.name = "AudiblethoughtsApp2">
+	<cfset This.name = "AudiblethoughtsApp3">
 	<cfset this.sessionmanagement = 'true'>
 	<cfset this.loginstorage="session">
 
@@ -11,6 +11,7 @@
 </cffunction>
 
 <cffunction name="onrequeststart">
+	
 	<cflogin>
 		<cfif not isdefined("cflogin")>
 			<cfinclude template="signin.cfm">
@@ -33,5 +34,9 @@
 			
 		</cfif>
 	</cflogin>
+</cffunction>
+
+<cffunction name="onApplicationStart">
+	<cfset application.adminEmail = 'a.j.hull3@leeds.ac.uk'/>
 </cffunction>
 </cfcomponent>
