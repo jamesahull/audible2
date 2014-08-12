@@ -43,6 +43,7 @@
                                 <option value='S'>Studying</option>
                                 <option value='N'>Not in work</option>
                                 <option value='X'>Prefer not to say</option>
+                                <option value='O'>Other</option>
                             </select>
                         </p>
                         <p>What sector do you work in?

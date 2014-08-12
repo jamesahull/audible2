@@ -29,7 +29,7 @@
 			<p>I am hoping to collect a lot of data, so I need a way of connecting each story with the information you provide in the "about me" section. You don't have to give your real name. </p>
 			
 			<h3>What are the advantages and disadvantages of taking part? </h3>
-			<p>Advantages: Some people find writing about their experiences helpful. Doing so can help people to see things differently or realise how their opinions have changed over time. Taken together, lots of peoples' stories will help me to find out how people experience the mental health care they receive and this information can be used to help develop better services in the future.      </p>
+			<p>Advantages: Some people find writing about their experiences helpful. Doing so can help people to see things differently or realise how their opinions have changed over time. Taken together, lots of people's stories will help me to find out how people experience the mental health care they receive and this information can be used to help develop better services in the future.      </p>
 			
 			<p>Disadvantages: It may take some time to write about your experiences. You can save your story and come back to it later. If you have had difficult or unpleasant experiences as part of your care, please only write what you feel comfortable in sharing. </p>
 			
@@ -37,7 +37,7 @@
 			<p>Yes. The study complies with The Data Protection Act 1998 and the University of Leeds safeguarding policy. If you agree, quotes may be taken from your story but you will not be identifiable from these. </p>
 			
 			<h3>What will happen to my story?</h3>
-			<p>I will read everything that is sent through this site. Your story may be combined with other peoples' to create a snapshot of the way people experience mental health care. This study forms part of my PhD thesis and may be presented at conferences and in journal articles.</p>
+			<p>I will read everything that is sent through this site. Your story may be combined with other people's to create a snapshot of the way people experience mental health care. This study forms part of my PhD thesis and may be presented at conferences and in journal articles.</p>
 			
 			<h3>What if I change my mind?</h3>
 			<p>You can withdraw from the study up to two weeks after you have submitted your story by logging in and clicking on the "withdraw" button on your home page. You don't have to give a reason. After two weeks, it may not be possible to extract your individual data from the study as I will be combining the stories from several people as I go along.</p>

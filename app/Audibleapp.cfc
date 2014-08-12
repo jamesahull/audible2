@@ -59,11 +59,9 @@
 			and userid = <cfqueryparam value="#getThisUserId(getAuthUser())#" cfsqltype="cf_sql_numeric">
 		</cfquery>
 		<cftry>
-			<cfmail to="#application.adminEmail#" from="Audible Thoughts<user@audiblethoughts.co.uk>" subject="User submission" type="html">
-				<p>User #getAuthUser()# just submitted this:</p>
-				<p>
-				#content#
-				</p>
+			<cfmail to="#application.adminEmail#" from="Audible Thoughts<user@audiblethoughts.co.uk>" subject="User created a story" type="html">
+				<p>User #getAuthUser()# just saved a story but has yet to submit it.</p>
+				
 			</cfmail>
 			<cfcatch type="any">
 				<cflog file="AudibleLog" text="#cfcatch.message#">
@@ -86,7 +84,7 @@
 		</cfquery>
 		<cftry>
 			<cfmail to="#application.adminEmail#" 
-			bcc="james.a.hull@gmail.com"
+			
 			from="Audible Thoughts<user@audiblethoughts.co.uk>" 
 			subject="User asked a question" type="html">
 				<p>User #getAuthUser()# just asked this:</p>
@@ -100,55 +98,75 @@
 		</cftry>
 		</cffunction>
 
-	<cffunction name="editpost">
+	<cffunction name="editpost" returntype="String">
 		<cfargument name="content">
 		<cfargument name="formAction">
 		<cfargument name="postId">
 		<cfargument name="initialpost" default="false">
-
+		
+		<cfset var action =''/>
 			<cfswitch expression="#formAction#">
 				<cfcase value="include">
-					<cfset var showpost = 'R'>			
+					<cfset updatePost(postId, content, 'R', initialpost) />
+					<cfset action = 'submitting' />
 				</cfcase>
 				<cfcase value="save">
-					<cfset var showpost = 'E'>			
+					<cfset updatePost(postId, content, 'E', initialpost) />
+					<cfset action = 'editing' />
 				</cfcase>
 				<cfcase value="delete">
-					<cfset var showpost = 'N'>			
-				</cfcase>
-				<cfcase value="approve">
-					<cfset var showpost = 'Y'>			
+					<cfset deletePost(postId) />
+					<cfset action = 'deleting' />
 				</cfcase>
 				<cfdefaultcase>
-					<cfset var showpost = 'E'>	
+					<cfset action = ''>	
 				</cfdefaultcase>
 			</cfswitch>
+		
+				
+			<cfif formAction eq 'include'>
+				<cftry>
+					<cfmail to="#application.adminEmail#" from="Audible Thoughts<user@audiblethoughts.co.uk>" subject="User submitted their story" type="html">
+						<p>User #getAuthUser()# just submitted their story.</p>
+						<p>
+						#content#
+						</p>
+					</cfmail>
+					<cfcatch type="any">
+						<cflog file="AudibleLog" text="#cfcatch.message#">
+					</cfcatch>
+				</cftry>
+			</cfif>
+		<cfreturn action />
+	</cffunction>
+
+	<cffunction name="updatePost" returntype="void">
+		<cfargument name="postId">
+		<cfargument name="content">
+		<cfargument name="showpost">
+		<cfargument name="initialpost" >
+
 		<cfquery name="q">
 			update northern_aliweb.posts 
 				set showpost = <cfqueryparam value="#showpost#" cfsqltype="cf_sql_varchar">
-				<cfif showpost neq 'N'>
 					<cfif initialpost eq false>
 						,content = <cfqueryparam value="#content#" cfsqltype="cf_sql_varchar">	
 					</cfif>
-				</cfif>
+				
 				where userid = <cfqueryparam value="#getThisUserId(getAuthUser())#" cfsqltype="cf_sql_numeric">
 				and id = <cfqueryparam value="#postId#" cfsqltype="cf_sql_numeric">
 				
 		</cfquery>
-				<cftry>
-			<cfmail to="#application.adminEmail#" from="Audible Thoughts<user@audiblethoughts.co.uk>" subject="User edited story" type="html">
-				<p>User #getAuthUser()# just submitted this (change from initial story). They want to #formAction# the story.</p>
-				<p>
-				#content#
-				</p>
-			</cfmail>
-			<cfcatch type="any">
-				<cflog file="AudibleLog" text="#cfcatch.message#">
-			</cfcatch>
-		</cftry>
-
 	</cffunction>
 
+	<cffunction name="deletePost" returntype="void">
+		<cfargument name="postId">
+
+		<cfquery name="q">
+			delete from northern_aliweb.posts where id = <cfqueryparam value="#postId#" cfsqltype="cf_sql_numeric">
+				and userid = <cfqueryparam value="#getThisUserId(getAuthUser())#" cfsqltype="cf_sql_numeric">
+		</cfquery>
+	</cffunction>
 
 	<cffunction name="getThisUserId" returntype="Numeric">
 		<cfargument name="thisuser" type="string">

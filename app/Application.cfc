@@ -37,6 +37,7 @@
 </cffunction>
 
 <cffunction name="onApplicationStart">
-	<cfset application.adminEmail = 'a.j.hull3@leeds.ac.uk'/>
+<!---<cfset application.adminEmail = 'james@northern-union.com'> --->
+	 <cfset application.adminEmail = 'a.j.hull3@leeds.ac.uk'/> 
 </cffunction>
 </cfcomponent>

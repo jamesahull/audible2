@@ -42,18 +42,18 @@
 		</cfoutput>
 		
 	</div>
-	<div class="span3">
+	<div class="span4">
 		<cfoutput>
 			<section id="Leeds">
 				
-				<p class="text-center"><a class="btn btn-info homebutton" role="button" href="http://medhealth.leeds.ac.uk/healthcare">University of Leeds</a></p>		
+				<p class="text-center"><a class="btn btn-info homebutton" role="button" href="http://medhealth.leeds.ac.uk/healthcare">School of Healthcare, University of Leeds</a></p>		
 			
 			</section>
 
 		</cfoutput>
 		
 	</div>
-	<div class="span3">
+	<div class="span2">
 		<cfoutput>
 			<section id="Blog">
 				<!---

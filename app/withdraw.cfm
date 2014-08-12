@@ -18,7 +18,7 @@
 
             <a class="btn btn-primary" href="confirm_withdraw.cfm">I want to withdraw my data from the study &raquo;</a>
         
-            <p>Please remember that after two weeks, it may not be possible for me to remove your data.</p>
+            <p>Please remember that if you withdraw more than two weeks after you submit your story, it may not be possible for me to remove your data.</p>
 
         </div>
       </div>

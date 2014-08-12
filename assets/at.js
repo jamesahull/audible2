@@ -1,7 +1,6 @@
 $(function() {
 	initCreateUserIdPageBindings();
 	
-	
 });
 
 function validAge(age) {
@@ -125,3 +124,4 @@ function uniqueUserId(userId) {
         }); 
 	  
 }
+

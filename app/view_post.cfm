@@ -38,11 +38,11 @@
 
             <div class="form-group">
               <cfif posts.showpost eq 'E'>    
-                <input class="btn btn-primary" type="button" value="Save story &raquo;" name="save"/>
-                <input class="btn btn-success" type="button" value="Submit story for inclusion &raquo;" name="include"/>
+                <input class="btn btn-primary standard-submit" type="button" value="Save story &raquo;" name="save"/>
+                <input class="btn btn-success standard-submit" type="button" value="Submit story for inclusion &raquo;" name="include"/>
                </cfif>
                <cfif posts.showpost eq 'E' or posts.showpost eq 'R'>
-                <input class="btn btn-danger" type="button" value="Delete story &raquo;" name="delete"/>   
+                <input class="btn btn-danger"  id="deleteStory" type="button" value="Delete story &raquo;" name="delete"/>   
                </cfif>
               
             </div>
@@ -60,23 +60,6 @@
         
       </div>
       </div>
-
+<cfinclude template="submitscripts.cfm">
 <cfinclude template="../lastfooter.cfm">
-<script type="text/javascript">
-  
-  
-  var viewpost = {
-    onReady: function() {
-      $("#content").autosize();  
-      $(".btn").click(viewpost.submitPost);    
-    },
 
-    submitPost: function() {
-      var action= $(this).attr('name');
-      $("#formAction").val(action);
-      $("#editPostForm").submit();
-    }
-  };
-
-  $( document ).ready( viewpost.onReady);
- </script>

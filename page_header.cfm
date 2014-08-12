@@ -91,12 +91,14 @@
 									<cfif isdefined("app")>
 										<li><a href="index.cfm">Your homepage</a></li>
 										<li><a href="logout.cfm">Log out</a></li>
+									<cfelse>
+										<li><a href="app/">Your homepage</li>
 									</cfif>
 							 		
-									<li><a href="#filePrefix#about.cfm">About</a></li>
+									<li><a href="#filePrefix#about.cfm">Researcher</a></li>
 								
 									<li><a href="#filePrefix#contact.cfm">Contact</a></li>
-								
+									<li><a href="#fileprefix#participantinfo.cfm">About the research</a></li>
 						</ul>
 					</li>
 				</ul>
