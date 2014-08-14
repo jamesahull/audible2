@@ -1,4 +1,4 @@
-
+<cfset nosupportlink = true>
 
 <cfinclude template="page_header.cfm">
 

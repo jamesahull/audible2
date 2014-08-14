@@ -201,6 +201,15 @@
 		<cfquery name="removeUser">
 			delete from northern_aliweb.users where id = <cfqueryparam value="#thisUser#" cfsqltype="cf_sql_numeric">
 		</cfquery>
+		<cftry>
+			<cfmail to="#application.adminEmail#" from="Audible Thoughts<user@audiblethoughts.co.uk>" subject="User withdrew from study" type="html">
+				<p>User #getAuthUser()# just withdrew from the study and all their content has been deleted.</p>
+				
+			</cfmail>
+			<cfcatch type="any">
+				<cflog file="AudibleLog" text="#cfcatch.message#">
+			</cfcatch>
+		</cftry>
 	</cffunction>
 
 	<cffunction name="registerForSummary" returntype="String">

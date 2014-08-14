@@ -71,18 +71,18 @@
 		<div class="navbar-inner">
 			
 			<div class="container">
-				<cfoutput>
-		<!---		<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-		            <span class="icon-bar"></span>
-		            <span class="icon-bar"></span>
-		            <span class="icon-bar"></span>
-		        </a> --->
-				
+				<cfoutput>				
 				<a class="brand" href="index.cfm"><strong>Audible Thoughts</strong></a>
-
-				
+				 <cfif not isDefined("nosupportlink")>
+					<div class="">
+	   					<ul class="nav navbar-nav">
+	        				<li><a class="active" href="#filePrefix#support.cfm">Sources of support</a></li>
+	        			</ul>
+	        		</div>
+        		</cfif>
 				<ul class="nav pull-right">
 					<li class="dropdown">
+						
 						<a href="##" class="dropdown-toggle" data-toggle="dropdown">
 							<i class="icon-info-sign icon-white"></i> Menu <b class="caret"></b>
 						</a>

@@ -17,7 +17,7 @@
 			<h4 class="altfont">This study is to find out more about people's experiences of mental health care. Please read the information below to help you decide whether you wish to take part.</h4>
 
 
-			<h5>I'm investigating the way mental health service users and healthcare staff work together to make decisions about mental health care. Previous research tells me that service users and healthcare staff don't always agree about why people experience mental health problems and when they do, what can be done to help. I am interested to find out whether these differences are common and whether they affect people's experiences of using mental health services.</h5>
+			<h5>I'm investigating the way mental health service users and healthcare staff work together to make decisions about mental health care. Previous research tells me that service users and healthcare staff don't always agree about why people experience mental health problems and when they do, what can be done to help. I am interested to find out whether these differences of opinion are common and whether they affect people's experiences of using mental health services.</h5>
 
 			<h3>Who can take part?</h3>
 			<p>People aged over 18 who have experience of using NHS mental health services other than their GP. </p>
@@ -31,7 +31,7 @@
 			<h3>What are the advantages and disadvantages of taking part? </h3>
 			<p>Advantages: Some people find writing about their experiences helpful. Doing so can help people to see things differently or realise how their opinions have changed over time. Taken together, lots of people's stories will help me to find out how people experience the mental health care they receive and this information can be used to help develop better services in the future.      </p>
 			
-			<p>Disadvantages: It may take some time to write about your experiences. You can save your story and come back to it later. If you have had difficult or unpleasant experiences as part of your care, please only write what you feel comfortable in sharing. </p>
+			<p>Disadvantages: It may take some time to write about your experiences. To help with this, the 'stories' page allows you to save your story and come back to it later. If you have had difficult or unpleasant experiences as part of your care, please write only what you feel comfortable about sharing. I have included the contact details of some <a href="support.cfm">sources of support</a> if you are in difficulty.</p>
 			
 			<h3>Will what I share be confidential?</h3>
 			<p>Yes. The study complies with The Data Protection Act 1998 and the University of Leeds safeguarding policy. If you agree, quotes may be taken from your story but you will not be identifiable from these. </p>
