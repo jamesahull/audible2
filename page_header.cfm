@@ -73,13 +73,7 @@
 			<div class="container">
 				<cfoutput>				
 				<a class="brand" href="index.cfm"><strong>Audible Thoughts</strong></a>
-				 <cfif not isDefined("nosupportlink")>
-					<div class="">
-	   					<ul class="nav navbar-nav">
-	        				<li><a class="active" href="#filePrefix#support.cfm">Sources of support</a></li>
-	        			</ul>
-	        		</div>
-        		</cfif>
+				 
 				<ul class="nav pull-right">
 					<li class="dropdown">
 						

@@ -10,7 +10,7 @@
 </div>
 
 <div class="row">
-<div class="span12">
+	<div class="span9">
 
 		<section id="AboutStudy">
 
@@ -18,7 +18,6 @@
 
 
 			<h5>I'm investigating the way mental health service users and healthcare staff work together to make decisions about mental health care. Previous research tells me that service users and healthcare staff don't always agree about why people experience mental health problems and when they do, what can be done to help. I am interested to find out whether these differences of opinion are common and whether they affect people's experiences of using mental health services.</h5>
-
 			<h3>Who can take part?</h3>
 			<p>People aged over 18 who have experience of using NHS mental health services other than their GP. </p>
 			
@@ -27,6 +26,15 @@
 			
 			<h3>Why am I being asked to register?</h3>
 			<p>I am hoping to collect a lot of data, so I need a way of connecting each story with the information you provide in the "about me" section. You don't have to give your real name. </p>
+			
+		</section>
+	</div>
+	<div class="span3">
+		<cfinclude template="support_box.cfm">
+	</div>
+</div>
+<div class="row">
+	<div class="span12">
 			
 			<h3>What are the advantages and disadvantages of taking part? </h3>
 			<p>Advantages: Some people find writing about their experiences helpful. Doing so can help people to see things differently or realise how their opinions have changed over time. Taken together, lots of people's stories will help me to find out how people experience the mental health care they receive and this information can be used to help develop better services in the future.      </p>
@@ -53,10 +61,5 @@
 			Thank you for reading. </p>
 
 			<div ><a class="btn btn-primary btn-lg"  role="button" href="consent.cfm">Next &raquo;</a></div>
-
-		</section>
-
-	
-		
 	</div>
-<cfinclude template="page_footer.cfm">
+<cfinclude template="lastfooter.cfm">

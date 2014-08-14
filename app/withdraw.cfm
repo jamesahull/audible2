@@ -14,15 +14,15 @@
 
       
       <div class="row">
-        <div class="span6">    
+        <div class="span9">    
 
             <a class="btn btn-primary" href="confirm_withdraw.cfm">I want to withdraw my data from the study &raquo;</a>
         
             <p>Please remember that if you withdraw more than two weeks after you submit your story, it may not be possible for me to remove your data.</p>
 
         </div>
-      </div>
+      
       
 
 
-<cfinclude template="../lastfooter.cfm">
+<cfinclude template="../page_footer.cfm">

@@ -13,13 +13,13 @@
 
 
       <div class="row">
-       <div class="span12">
+       <div class="span9">
   
            <p>You will have to login and check the status of your question at a later date as we do not have contact details for you.</p>
         	
         		<a class="btn btn-primary" href="index.cfm">Return to homepage &raquo;</a>
                 
       </div>
-      </div>
+      
 
-<cfinclude template="../lastfooter.cfm">
+<cfinclude template="../page_footer.cfm">

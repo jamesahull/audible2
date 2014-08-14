@@ -14,12 +14,12 @@
 
 
       <div class="row">
-       <div class="span12">
+       <div class="span9">
         <cfif action eq 'deleting'>
           <p>Your story has been deleted – and will not be used in the study.</p>
         </cfif>
         <a href="index.cfm">Return to homepage</a>
       </div>
-      </div>
+      
 
-<cfinclude template="../lastfooter.cfm">
+<cfinclude template="../page_footer.cfm">

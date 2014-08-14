@@ -107,6 +107,10 @@
 		<cfset var action =''/>
 			<cfswitch expression="#formAction#">
 				<cfcase value="include">
+					<cfset updatePost(postId, content, 'R', initialpost) />
+					<cfset action = 'submitting' />
+				</cfcase>
+				<cfcase value="includenow">
 					<cfset updatePost(postId, ' ', 'R', initialpost) />
 					<cfset action = 'submitting' />
 				</cfcase>
