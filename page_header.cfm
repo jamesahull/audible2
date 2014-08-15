@@ -91,7 +91,7 @@
 							 		
 									<li><a href="#filePrefix#about.cfm">Researcher</a></li>
 								
-									<li><a href="#filePrefix#contact.cfm">Contact</a></li>
+									
 									<li><a href="#fileprefix#participantinfo.cfm">About the research</a></li>
 						</ul>
 					</li>
