@@ -23,7 +23,7 @@
 		<cfoutput>
 			<section id="Home">
 				
-				<p class="text-center"><a class="btn btn-info" role="button"  href="app/">Already signed up? Login Now</a></p>		
+				<p class="text-center"><a class="btn btn-info" role="button"  href="app/">Already signed up? Login here</a></p>		
 			
 			</section>
 

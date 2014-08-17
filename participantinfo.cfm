@@ -17,7 +17,8 @@
 			<h4 class="altfont">This study is to find out more about people's experiences of mental health care. Please read the information below to help you decide whether you wish to take part.</h4>
 
 
-			<h5>I'm investigating the way mental health service users and healthcare staff work together to make decisions about mental health care. Previous research tells me that service users and healthcare staff don't always agree about why people experience mental health problems and when they do, what can be done to help. I am interested to find out whether these differences of opinion are common and whether they affect people's experiences of using mental health services.</h5>
+			<h5>I'm investigating the way mental health service users and healthcare staff work together to make decisions about mental health care. Previous research tells me that service users and healthcare staff don't always agree about why people experience mental health problems and what can be done to help. I am interested to find out whether these differences of opinion are common and whether they affect people's experiences of using mental health services. I'm hoping that my research findings will be used to help improve care. 
+			</h5>
 			<h3>Who can take part?</h3>
 			<p>People aged over 18 who have experience of using NHS mental health services other than their GP. </p>
 			
