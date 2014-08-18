@@ -40,8 +40,7 @@
 			<h3>What are the advantages and disadvantages of taking part? </h3>
 			<p>Advantages: Some people find writing about their experiences helpful. Doing so can help people to see things differently or realise how their opinions have changed over time. Taken together, lots of people's stories will help me to find out how people experience the mental health care they receive and this information can be used to help develop better services in the future.      </p>
 			
-			<p>Disadvantages: It may take some time to write about your experiences. To help with this, the 'stories' page allows you to save your story and come back to it later. If you have had difficult or unpleasant experiences as part of your care, please write only what you feel comfortable about sharing. I have included the contact details of some sources of support if you are in difficulty.</p>
-			
+			<p>Disadvantages: It may take some time to write about your experiences. To help with this, the 'stories' page allows you to save your story and come back to it later. If you have had difficult or unpleasant experiences as part of your care, please write only what you feel comfortable about sharing. I have included the contact details some sources of support should you experience any difficulties as a result of writing your story.</p>
 			<h3>Will what I share be confidential?</h3>
 			<p>Yes. The study complies with The Data Protection Act 1998 and the University of Leeds safeguarding policy. If you agree, quotes may be taken from your story but you will not be identifiable from these. </p>
 			
