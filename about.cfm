@@ -9,7 +9,7 @@
 </div>
 
 <div class="row">
-<div class="span7">
+<div class="span6">
 
 		<section id="eventHandlers">
 		<p>Hello, I'm Ali Hull. I'm a PhD researcher at the Unversity of Leeds. I'm also a mental health service user. My background is in psychology and counselling therapy. My research interests include perspectives on mental health and mental health care, chronic illness and pain, personal identity, support and friendship, family life, how the physical environment is connected to mental wellbeing, mental health in the virtual world and pets as therapy (PAT).  </p>
@@ -19,16 +19,11 @@
 			<p>I am supervised by Professor Dawn Freshwater and Dr Jane Cahill, who are academics in the School of Healthcare.
 			</p>
 	        
-	        
 		</section>
-
-	
 		
 	</div>
 
-<div class="span1">
-	</div>
-<div class="span4">
+<div class="span3">
 	<img src="assets/aliwithmax.png" alt="Ali Hull" id="alipic" class="img-rounded" align="right"/>
 </div>
 <cfinclude template="page_footer.cfm">
