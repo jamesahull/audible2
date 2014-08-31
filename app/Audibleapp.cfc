@@ -141,6 +141,21 @@
 					</cfcatch>
 				</cftry>
 			</cfif>
+
+			<cfif formAction eq 'includenow'>
+				<cfset var thisContent = userPosts(getAuthUser(), postId)>
+					<cftry>
+					<cfmail to="#application.adminEmail#" from="Audible Thoughts<user@audiblethoughts.co.uk>" subject="User submitted their story" type="html">
+						<p>User #getAuthUser()# just submitted their story (without further editing).</p>
+						<p>
+						#thisContent.content#
+						</p>
+					</cfmail>
+					<cfcatch type="any">
+						<cflog file="AudibleLog" text="#cfcatch.message#">
+					</cfcatch>
+				</cftry>
+			</cfif>
 		<cfreturn action />
 	</cffunction>
 
