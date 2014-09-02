@@ -1,5 +1,5 @@
 <cfcomponent>
-	<cffunction name="checkId" returntype="String" access="remote">
+	<cffunction name="checkId"  access="remote">
 		<cfargument name="username" type="string">
 		<cfset var loc = {} />
 		<cfset loc.returnStatus = 0/>
@@ -17,8 +17,7 @@
 			<cfset loc.result = "That username is already taken">
 		</cfif>
 
-		
-		<cfreturn SerializeJson(loc) />
+		<cfreturn loc />
 	</cffunction>
 
 
